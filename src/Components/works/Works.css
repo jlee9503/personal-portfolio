@@ -1,0 +1,301 @@
+.work-wrap {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.education,
+.work,
+.skill {
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto 20px auto;
+	width: 100%;
+}
+
+.education .work-title,
+.work .work-title,
+.skill .work-title {
+	text-transform: uppercase;
+}
+
+.education .description > h4,
+.description > p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* education */
+.education .description > h4 {
+	font-size: 25px;
+}
+
+.major {
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* works */
+.work-title > h1 {
+	position: relative;
+	letter-spacing: 3px;
+	font-size: 20px;
+	width: 80%;
+	margin: 0 auto 10px auto;
+}
+
+.work-title > h1::after {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #0881f1;
+	left: 0;
+	bottom: 0;
+}
+
+.project-wrapper {
+	display: flex;
+}
+
+.work1-margin > a > img {
+	margin-top: 10px;
+}
+
+.work .description {
+	display: flex;
+	flex-direction: column;
+}
+
+.comment {
+	margin-bottom: 30px;
+	opacity: 0.3;
+	font-style: italic;
+}
+
+.work-info {
+	width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.project-image {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* image with no link */
+.project-image > img {
+	width: 200px;
+	height: 150px;
+}
+
+.project-image > img:hover {
+	filter: brightness(40%);
+	transition: all 0.5s ease;
+}
+
+/* image with link */
+.project-image > a > img {
+	width: 200px;
+	height: 150px;
+}
+
+.project-image > a > img:hover {
+	filter: brightness(40%);
+	transition: all 0.5s ease;
+}
+
+.link-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.project-image:hover .link-icon {
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.project-title {
+	width: 200px;
+}
+
+.project-description {
+	display: none;
+}
+
+/* skills section */
+.skill .description {
+	display: flex;
+	flex-direction: column;
+}
+
+.skill-name {
+	font-size: 27px;
+}
+
+.skill-name > p {
+	margin-bottom: 15px;
+}
+
+/* icon colors */
+.html {
+	color: #ff4500;
+}
+
+.css {
+	color: #0881f1;
+}
+
+.js {
+	color: #c7bd32;
+}
+
+.react {
+	color: #0454a0;
+}
+
+.python {
+	color: #0f58f7;
+}
+
+.sql {
+	color: #6b6a6a;
+}
+
+.skill-name > p {
+	font-size: 15px;
+}
+
+/* skill bars */
+.skill-bars {
+	display: none;
+}
+
+/* media queries */
+@media screen and (min-width: 750px) {
+	.work-wrap {
+		text-align: left;
+		width: 60%;
+		margin: 0 auto;
+		padding: 60px 0;
+	}
+
+	.description {
+		width: 60%;
+	}
+
+	.education,
+	.work,
+	.skill {
+		flex-direction: row;
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.education .description > h4,
+	.description > p {
+		width: 100%;
+	}
+
+	.education .description > h4 {
+		margin-bottom: 15px;
+	}
+
+	.work-title > h1 {
+		width: 100%;
+		margin: 0;
+	}
+
+	.work-title {
+		margin-bottom: 15px;
+	}
+
+	.work-info {
+		margin: 0 0 20px 0;
+	}
+
+	.project-image {
+		width: auto;
+		max-width: 200px;
+		margin: 0;
+	}
+
+	.project-title {
+		text-align: center;
+	}
+
+	.skill .description {
+		flex-direction: row;
+	}
+
+	.education-wrapper,
+	.work-wrapper,
+	.skill-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.skill-bars {
+		display: block;
+		background-color: #c5c2c2;
+		height: 15px;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-top: -5px;
+		border-radius: 5px;
+	}
+
+	/* skill process bars */
+	.skill-bar-html,
+	.skill-bar-css,
+	.skill-bar-js,
+	.skill-bar-react,
+	.skill-bar-python,
+	.skill-bar-sql {
+		background-color: #000;
+		height: 15px;
+	}
+
+	.skill-bar-html {
+		width: 80%;
+	}
+
+	.skill-bar-css {
+		width: 80%;
+	}
+
+	.skill-bar-js {
+		width: 75%;
+	}
+
+	.skill-bar-react {
+		width: 50%;
+	}
+
+	.skill-bar-python {
+		width: 45%;
+	}
+
+	.skill-bar-sql {
+		width: 60%;
+	}
+
+	.skill-name {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1020px) {
+	.project-description {
+		display: block;
+		margin-left: 40px;
+	}
+}
