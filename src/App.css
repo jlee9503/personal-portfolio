@@ -13,7 +13,7 @@
 
 #main::after {
 	content: "";
-	background: url(/images/mobile-background.JPG);
+	background: url(/images/mobile-background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

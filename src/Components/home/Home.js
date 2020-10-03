@@ -14,7 +14,7 @@ class Home extends Component {
 					return (
 						<img
 							key={idx}
-							src={`/images/${data.image}`}
+							src={`public/images/${data.image}`}
 							alt="profile"
 							className="profile"
 						/>
