@@ -54,7 +54,7 @@ class Works extends Component {
 												<div className="project-image work1-margin">
 													<a href={data.workLinks.work1}>
 														<img
-															src={`/images/${data.workImage.w1_image}`}
+															src={`https://jlee9503.github.io/personal-portfolio/images/${data.workImage.w1_image}`}
 															alt={data.workTitle.work1}
 														/>
 													</a>
@@ -77,7 +77,7 @@ class Works extends Component {
 												<div className="project-image">
 													<a href={data.workLinks.work2}>
 														<img
-															src={`/images/${data.workImage.w2_image}`}
+															src={`https://jlee9503.github.io/personal-portfolio/images/${data.workImage.w2_image}`}
 															alt={data.workTitle.work2}
 														/>
 													</a>
@@ -100,7 +100,7 @@ class Works extends Component {
 												<div className="project-image">
 													<a href={data.workLinks.work3}>
 														<img
-															src={`/images/${data.workImage.w3_image}`}
+															src={`https://jlee9503.github.io/personal-portfolio/images/${data.workImage.w3_image}`}
 															alt={data.workTitle.work3}
 														/>
 													</a>
@@ -121,7 +121,7 @@ class Works extends Component {
 											<div className="project-wrapper">
 												<div className="project-image">
 													<img
-														src={`/images/${data.workImage.w4_image}`}
+														src={`https://jlee9503.github.io/personal-portfolio/images/${data.workImage.w4_image}`}
 														alt={data.workTitle.work4}
 													/>
 													<div className="link-icon">

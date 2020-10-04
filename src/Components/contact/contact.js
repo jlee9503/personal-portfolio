@@ -35,17 +35,29 @@ class contact extends Component {
 							<div key={idx}>
 								<div className="social-icons">
 									<div className="social-icon">
-										<a href={data.linkedin}>
+										<a
+											href={data.linkedin}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
 										</a>
 									</div>
 									<div className="social-icon">
-										<a href={data.instagram}>
+										<a
+											href={data.instagram}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<FontAwesomeIcon icon={faInstagram} className="icon" />
 										</a>
 									</div>
 									<div className="social-icon">
-										<a href={data.github}>
+										<a
+											href={data.github}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<FontAwesomeIcon icon={faGithub} className="icon" />
 										</a>
 									</div>

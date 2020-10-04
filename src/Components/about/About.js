@@ -11,7 +11,7 @@ class About extends Component {
 					return (
 						<div className="about-wrapper" key={idx}>
 							<img
-                src={`/images/${data.image}`}
+								src={`https://jlee9503.github.io/personal-portfolio/images/${data.image}`}
 								alt="profile"
 								className="about-profile"
 							/>
